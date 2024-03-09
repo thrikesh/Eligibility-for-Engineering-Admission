@@ -63,7 +63,6 @@ using System;
     }
         }
 
-
 ## Output:
 ![308843896-8425ac22-fd15-4da6-8b55-51cfdfc13491](https://github.com/thrikesh/Eligibility-for-Engineering-Admission/assets/119576222/2c985ffa-e5ca-434e-94d0-af5eea6b48a3)
 
