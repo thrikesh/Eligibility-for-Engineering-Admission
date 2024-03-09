@@ -29,39 +29,32 @@ NAME:THRIKESWAR P
 REGISTER NO:212222230162
 
 using System;
-    class Eligibility
+
+class Program
+{
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-           int mpc,mp,maths, physics, chemistry;
-        string name;
-        Console.WriteLine("Enter mark in maths:");
-        maths = int.Parse(Console.ReadLine());
+        Console.WriteLine("Enter marks obtained in Maths:");
+        int mathsMarks = Convert.ToInt32(Console.ReadLine());
 
-        Console.WriteLine("Enter mark in physics:");
-        physics = int.Parse(Console.ReadLine());
+        Console.WriteLine("Enter marks obtained in Physics:");
+        int physicsMarks = Convert.ToInt32(Console.ReadLine());
 
-        Console.WriteLine("Enter mark in chemistry:");
-        chemistry = int.Parse(Console.ReadLine());
-        mpc=maths+physics+chemistry;
-        mp=maths+physics;
-        if(maths>=65&&physics>=55&&chemistry>=50)
+        Console.WriteLine("Enter marks obtained in Chemistry:");
+        int chemistryMarks = Convert.ToInt32(Console.ReadLine());
+
+        int totalMarks = mathsMarks + physicsMarks + chemistryMarks;
+
+        if (mathsMarks >= 65 && physicsMarks >= 55 && chemistryMarks >= 50 && (totalMarks >= 180 || (mathsMarks + physicsMarks) >= 140))
         {
-            if(mpc>=180||mp>=140)
-            {
-                Console.WriteLine("eligible for admission.");
-            }
-            else
-            {
-                Console.WriteLine("not eligible for admission.");
-            }
+            Console.WriteLine("Congratulations! You are eligible for admission to the engineering course.");
         }
         else
         {
-            Console.WriteLine("not eligible for admission.");
+            Console.WriteLine("You are not eligible for admission to the engineering course.");
         }
     }
-        }
+}
 
 ## Output:
 ![308843896-8425ac22-fd15-4da6-8b55-51cfdfc13491](https://github.com/thrikesh/Eligibility-for-Engineering-Admission/assets/119576222/2c985ffa-e5ca-434e-94d0-af5eea6b48a3)
