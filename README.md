@@ -28,8 +28,6 @@ Exit the Program.
 NAME:THRIKESWAR P
 REGISTER NO:212222230162
 
-
-
 using System;
     class Eligibility
     {
